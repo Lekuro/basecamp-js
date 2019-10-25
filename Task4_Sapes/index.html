@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 4 Array</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1>Comma (',') in JavaScript is evil</h1>
+      <h2>Create random shapes</h2>
+      <label>Minimum side: </label>
+      <input tabindex="1" type="number" min="1" max="50" name="minSide" id="minSide" value="1" />
+      <label>Maximum side: </label>
+      <input tabindex="2" type="number" min="1" max="50" name="maxSide" id="maxSide" value="10" />
+      <label for="amount">Number of shapes: </label>
+      <input tabindex="3" type="number" min="1" max="1000" name="amount" id="amount" value="100" />
+      <label for="coef">Coefficient(bigger shapes): </label>
+      <input tabindex="4" type="number" min="1" max="100" name="coef" id="coef" value="5" />
+      <button id="shapes">Shapes</button>
+      <p>Number of quadrates: <span id="quadrates"></span></p>
+      <p>Number of rectangles: <span id="rectangles"></span></p>
+      <p>Number of non-existent: <span id="non-existent"></span></p>
+      <p>Number of trapeziums: <span id="trapezium"></span></p>
+      <p>Number of kites: <span id="kite"></span></p>
+      <p>Number of trapezes: <span id="trapeze"></span></p>
+      <p>Number of quadrangles: <span id="quadrangles"></span></p>
+      <div id="svg-container"></div>
+    </main>
+    <script src="./task4.js"></script>
+  </body>
+</html>

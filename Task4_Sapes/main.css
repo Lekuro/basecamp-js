@@ -1,0 +1,36 @@
+body {
+  background-color: #cccccc;
+  margin: 0;
+}
+body,
+button {
+  font: 16px sans-serif;
+}
+main {
+  margin: 0 auto;
+  width: 960px;
+}
+button {
+  display: block;
+  padding: 5px 50px;
+  margin: 10px auto;
+  border: 2px solid #888888;
+  border-radius: 20px;
+}
+button:hover {
+  border: 2px dotted #333333;
+}
+span {
+  font-weight: bold;
+}
+svg {
+  margin: 10px;
+  border: 1px solid green;
+}
+rect,
+polygon {
+  fill: #888888;
+}
+h1 {
+  text-align: center;
+}

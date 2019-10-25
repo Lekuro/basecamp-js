@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task7</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+
+  <body>
+    <form action="form.php" method="post" class="resize" enctype="multipart/form-data">
+      <header>
+        <div><img src="f.jpg" alt="my_foto" /> <input type="file" name="foto" id="foto" required /></div>
+        <div>
+          <ul>
+            <li>
+              <label for="phone">&#9742;</label>
+              <input type="tel" name="phone" id="phone" required placeholder="phone" />
+            </li>
+            <li>
+              <label for="address">&#9993;</label>
+              <input type="text" name="address" id="address" required placeholder="address" />
+            </li>
+            <li>
+              <label for="email">&#64;</label>
+              <input type="email" name="email" id="email" required placeholder="email" />
+            </li>
+          </ul>
+          <ul>
+            <li><input type="text" name="name" id="name" required placeholder="Name" /></li>
+            <li><input type="text" name="surname" id="surname" required placeholder="Surname" /></li>
+          </ul>
+          <ul>
+            <li>
+              <label for="birthday">birthday:</label> <input type="date" name="birthday" id="birthday" required />
+            </li>
+            <li><label for="date">today:</label> <input type="date" name="date" id="date" required /></li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~skills~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <fieldset name="skills">
+          <legend>Personal skills</legend>
+          <ul>
+            <li>
+              <input type="text" name="skill1" value="Html" />
+              <progress value="40" max="100" id="progress1"></progress>
+              <input type="text" name="skill1_progress" value="40" hidden />
+            </li>
+            <li>
+              <input type="text" name="skill2" value="Css" /><progress value="50" max="100" id="progress2"></progress>
+              <input type="text" name="skill2_progress" value="50" hidden />
+            </li>
+            <li>
+              <input type="text" name="skill3" value="JS" /><progress value="60" max="100" id="progress3"></progress>
+              <input type="text" name="skill3_progress" value="60" hidden />
+            </li>
+            <li>
+              <input type="text" name="skill4" value="PHP" /><progress value="10" max="100" id="progress4"></progress>
+              <input type="text" name="skill4_progress" value="10" hidden />
+            </li>
+            <li>
+              <input type="text" name="skill5" value="Node.js" />
+              <progress value="20" max="100" id="progress5"></progress>
+              <input type="text" name="skill5_progress" value="20" hidden />
+            </li>
+            <li>
+              <input type="text" name="skill6" value="" /><progress value="30" max="100" id="progress6"></progress>
+              <input type="text" name="skill6_progress" value="30" hidden />
+            </li>
+          </ul>
+        </fieldset>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~education~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <fieldset name="education">
+          <legend>Education</legend>
+          <article>
+            <h3>Hight School</h3>
+            <input type="text" name="year_school" id="year_school" placeholder="years" required />
+            <textarea name="message_school" id="message_school" placeholder="achievements"></textarea>
+          </article>
+          <article>
+            <h3>University</h3>
+            <input type="text" name="year_univer" id="year_univer" placeholder="years" />
+            <textarea name="message_univer" id="message_univer" placeholder="achievements"></textarea>
+          </article>
+          <article>
+            <h3>Master</h3>
+            <input type="text" name="year_master" id="year_master" placeholder="years" />
+            <textarea name="message_master" id="message_master" placeholder="achievements"></textarea>
+          </article>
+        </fieldset>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~interests~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <fieldset name="interests">
+          <legend>Interests</legend>
+          <ul>
+            <li>
+              <label>
+                <span>&#10084;</span><input type="text" name="interest1" id="interest1" value="literature" />
+              </label>
+              <input type="checkbox" name="interest1_checkbox" id="interest1_checkbox" />
+            </li>
+            <li>
+              <label> <span>&#10084;</span><input type="text" name="interest2" id="interest2" value="poetry" /> </label>
+              <input type="checkbox" name="interest2_checkbox" id="interest2_checkbox" />
+            </li>
+            <li>
+              <label>
+                <span>&#10084;</span><input type="text" name="interest3" id="interest3" value="traveling" />
+              </label>
+              <input type="checkbox" name="interest3_checkbox" id="interest3_checkbox" />
+            </li>
+            <li>
+              <label>
+                <span>&#10084;</span><input type="text" name="interest4" id="interest4" value="coocking" />
+              </label>
+              <input type="checkbox" name="interest4_checkbox" id="interest4_checkbox" />
+            </li>
+            <li>
+              <label>
+                <span>&#10084;</span><input type="text" name="interest5" id="interest5" value="internet" />
+              </label>
+              <input type="checkbox" name="interest5_checkbox" id="interest5_checkbox" />
+            </li>
+            <li>
+              <label>
+                <span>&#10084;</span><input type="text" name="interest6" id="interest6" value="fishing" />
+              </label>
+              <input type="checkbox" name="interest6_checkbox" id="interest6_checkbox" />
+            </li>
+            <li>
+              <label> <span>&#10084;</span><input type="text" name="interest7" id="interest7" value="sports" /> </label>
+              <input type="checkbox" name="interest7_checkbox" id="interest7_checkbox" />
+            </li>
+            <li>
+              <label> <span>&#10084;</span><input type="text" name="interest8" id="interest8" value="" /> </label>
+              <input type="checkbox" name="interest8_checkbox" id="interest8_checkbox" />
+            </li>
+          </ul>
+        </fieldset>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~languages~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <fieldset name="languages">
+          <legend>Languages</legend>
+          <ul>
+            <li>
+              <label for="lang1">&#9998;</label><input type="text" name="lang11" id="lang1" value="English" />
+              <div class="rating">
+                <input id="lang15" type="radio" name="lang1" value="5" /> <label for="lang15">&#9733; </label>
+                <input id="lang14" type="radio" name="lang1" value="4" /> <label for="lang14">&#9733; </label>
+                <input id="lang13" type="radio" name="lang1" value="3" /> <label for="lang13">&#9733; </label>
+                <input id="lang12" type="radio" name="lang1" value="2" /> <label for="lang12">&#9733; </label>
+                <input id="lang11" type="radio" name="lang1" value="1" /> <label for="lang11">&#9733; </label>
+                <input id="lang10" type="radio" name="lang1" value="0" /> <label for="lang10">&#9733; </label>
+              </div>
+            </li>
+            <li>
+              <label for="lang2">&#9998;</label><input type="text" name="lang22" id="lang2" value="Ukrainian" />
+              <div class="rating">
+                <input id="lang25" type="radio" name="lang2" value="5" /> <label for="lang25">&#9733; </label>
+                <input id="lang24" type="radio" name="lang2" value="4" /> <label for="lang24">&#9733; </label>
+                <input id="lang23" type="radio" name="lang2" value="3" /> <label for="lang23">&#9733; </label>
+                <input id="lang22" type="radio" name="lang2" value="2" /> <label for="lang22">&#9733; </label>
+                <input id="lang21" type="radio" name="lang2" value="1" /> <label for="lang21">&#9733; </label>
+                <input id="lang20" type="radio" name="lang2" value="0" /> <label for="lang20">&#9733; </label>
+              </div>
+            </li>
+            <li>
+              <label for="lang3">&#9998;</label><input type="text" name="lang33" id="lang3" />
+              <div class="rating">
+                <input id="lang35" type="radio" name="lang3" value="5" /> <label for="lang35">&#9733; </label>
+                <input id="lang34" type="radio" name="lang3" value="4" /> <label for="lang34">&#9733; </label>
+                <input id="lang33" type="radio" name="lang3" value="3" /> <label for="lang33">&#9733; </label>
+                <input id="lang32" type="radio" name="lang3" value="2" /> <label for="lang32">&#9733; </label>
+                <input id="lang31" type="radio" name="lang3" value="1" /> <label for="lang31">&#9733; </label>
+                <input id="lang30" type="radio" name="lang3" value="0" /> <label for="lang30">&#9733; </label>
+              </div>
+            </li>
+            <li>
+              <label for="lang4">&#9998;</label><input type="text" name="lang44" id="lang4" />
+              <div class="rating">
+                <input id="lang45" type="radio" name="lang4" value="5" /> <label for="lang45">&#9733; </label>
+                <input id="lang44" type="radio" name="lang4" value="4" /> <label for="lang44">&#9733; </label>
+                <input id="lang43" type="radio" name="lang4" value="3" /> <label for="lang43">&#9733; </label>
+                <input id="lang42" type="radio" name="lang4" value="2" /> <label for="lang42">&#9733; </label>
+                <input id="lang41" type="radio" name="lang4" value="1" /> <label for="lang41">&#9733; </label>
+                <input id="lang40" type="radio" name="lang4" value="0" /> <label for="lang40">&#9733; </label>
+              </div>
+            </li>
+            <li>
+              <label for="lang5">&#9998;</label><input type="text" name="lang55" id="lang5" />
+              <div class="rating">
+                <input id="lang55" type="radio" name="lang5" value="5" /> <label for="lang55">&#9733; </label>
+                <input id="lang54" type="radio" name="lang5" value="4" /> <label for="lang54">&#9733; </label>
+                <input id="lang53" type="radio" name="lang5" value="3" /> <label for="lang53">&#9733; </label>
+                <input id="lang52" type="radio" name="lang5" value="2" /> <label for="lang52">&#9733; </label>
+                <input id="lang51" type="radio" name="lang5" value="1" /> <label for="lang51">&#9733; </label>
+                <input id="lang50" type="radio" name="lang5" value="0" /> <label for="lang50">&#9733; </label>
+              </div>
+            </li>
+            <li>
+              <label for="lang6">&#9998;</label><input type="text" name="lang66" id="lang6" />
+              <div class="rating">
+                <input id="lang65" type="radio" name="lang6" value="5" /> <label for="lang65">&#9733; </label>
+                <input id="lang64" type="radio" name="lang6" value="4" /> <label for="lang64">&#9733; </label>
+                <input id="lang63" type="radio" name="lang6" value="3" /> <label for="lang63">&#9733; </label>
+                <input id="lang62" type="radio" name="lang6" value="2" /> <label for="lang62">&#9733; </label>
+                <input id="lang61" type="radio" name="lang6" value="1" /> <label for="lang61">&#9733; </label>
+                <input id="lang60" type="radio" name="lang6" value="0" /> <label for="lang60">&#9733; </label>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~send~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <fieldset name="send">
+          <legend hidden>Send</legend>
+          <div class="section">
+            <div><label for="mail">Email:</label><input type="email" name="sent_mail" id="mail" /></div>
+            <div><label for="message">Message:</label><textarea name="sent_message" id="message"></textarea></div>
+            <div><input type="reset" value="reset" /><button type="submit">submit</button></div>
+          </div>
+        </fieldset>
+      </main>
+    </form>
+    <script src="./main.js"></script>
+  </body>
+</html>
